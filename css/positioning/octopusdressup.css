@@ -1,0 +1,16 @@
+#body {
+	position: absolute;
+	display: block;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+}
+
+#hat {
+	position: fixed;
+}
+
+#glasses {
+	position: fixed;
+}
