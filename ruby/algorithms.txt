@@ -1,0 +1,32 @@
+*Teaching The Robot To Use The Elevator
+	*Go to the elevator.
+	*Look at the control panel.
+	*Push the button to summon the elevator.
+	*Wait until the elevator comes to your floor and the doors open.
+	*When the doors open, step into the elevator, pass the doors.
+	*Look at the control panel inside the elevator. 
+	*Press the button of the floor that you want to visit.
+		*(I will tell you what floor to visit beforehand. Go to any other floor, and that will be considered a malfunction. You will be sent for reprogramming.)
+	*Wait until the elevator takes you to the floor that you want to visit and the doors open.
+	*Exit the elevator. 
+		*Make sure that you're not trapped in the doors, you stupid robot.
+
+*Teaching The Robot To Walk The Dog
+	*Find the family dog. 
+		*It's the fawn-colored pug with the red collar called Frodo.
+			*(Do not attempt to walk any other dog.)
+	*Put Frodo's leash on him. 
+		*Be gentle - He's a fragile, drooling creature.
+	*Firmly hold onto Frodo's leash. 
+	*Exit the house and go outside with Frodo.
+	*Stay on the sidewalk, avoiding any potential hazards.
+		*Go around those potential hazards.
+	*Walk the 2.3 miles to the local park. 
+		*That's where Frodo likes to go.
+	*Frodo may need to relieve himself. 
+		*Stop when Frodo stops and puts one leg up. 
+		*Collect any excrement in the provided plastic bag.
+	*Once at the park, allow Frodo to run (really waddle) around within your eyesight for 15 minutes.
+		*Take him off the leash for this time.
+	*After those 15 minutes are up, put Frodo back on the leash.
+	*Return to our house. 
