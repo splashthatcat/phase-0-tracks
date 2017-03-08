@@ -22,18 +22,18 @@ console.log(barn);
 console.log(colors);
 console.log(names);
 
-function Car(year, brand, color, beep){
+function Car(year, brand, color, honk){
 	this.year = year;
     this.brand = brand;
 	this.color = color;
-	this.beep = beep;
-    this.beep = function() { console.log ("BEEEEEP!"); };
+	this.honk = honk;
+    this.honk = function() { console.log ("HOONK!"); };
 }
 
-var car1 = new Car(2016, "Subaru STi", "Gray");
+var car1 = new Car(2016, "Porsche", "Red");
 console.log(car1);
-car1.beep();
+car1.honk();
 
-var car2 = new Car(2016, "Acura", "White");
+var car2 = new Car(2016, "Fiat", "White");
 console.log(car2);
-car2.beep();
+car2.honk();
