@@ -1,0 +1,31 @@
+1.) In the welp directory, create a file called queries.txt. Once you've figured out the queries below, paste them into queries.txt, along with the output from your database.
+
+Done.
+
+2.) You’ve joined two tables before. How do you join three?
+
+SELECT * FROM  businesses INNER JOIN users ON reviews
+
+Moe's Burgers|119 Lake Street
+Suicide Blonde|200 Rivers Drive
+1|5|I love Moe's!|1|1
+2|4|I love Suicide Blonde's selection.|2|2
+David Wu|11
+Maria Diaz|39
+
+3.) There are some repetitive columns if we choose to view all fields. Choose instead to just view the user's names, the business name, the star rating, and the comment.
+
+SELECT names FROM users INNER JOIN business_name FROM businesses INNER JOIN stars comment ON reviews
+
+Moe's Burgers|
+Suicide Blonde|200 
+5|I love Moe's!|
+4|I love Suicide Blonde's selection.|
+David Wu
+Maria Diaz
+    
+4.) How do you view the data of all three tables for just one particular business? 
+
+SELECT business_name1 business_address1  FROM businesses  INNER JOIN reviews ON stars1 comment1
+
+Moe's Burgers|119 Lake Street|5|I love Moe's!|
