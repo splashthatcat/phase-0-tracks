@@ -1,0 +1,70 @@
+1.) Display the information in one table (either table is fine).
+
+sqlite> SELECT * FROM makeup_collection;
+NARS Exhibit A|Rimmel Eyebrow Pencil|Burts Bees Lip Balm
+Maybelline Face Studio Primer|Miss Manga Mascara|Lipstick Queen Medieval
+Glossier Highlighter Quartz|Skyn Iceland Cooling Eye Gels|Nars Lip Pencil Belle De Jour
+L'Oreal Lumi Cushion Foundation|Maybelline Master Camo Palette|Lipstick Queen Eden
+
+2.) Update an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> UPDATE makeup_collection SET eyes=
+   ...> "L'Oreal Miss Manga Mascara";
+sqlite> SELECT * FROM makeup_collection;
+NARS Exhibit A|L'Oreal Miss Manga Mascara|Burts Bees Lip Balm
+Maybelline Face Studio Primer|L'Oreal Miss Manga Mascara|Lipstick Queen Medieval
+Glossier Highlighter Quartz|L'Oreal Miss Manga Mascara|Nars Lip Pencil Belle De Jour
+L'Oreal Lumi Cushion Foundation|L'Oreal Miss Manga Mascara|Lipstick Queen Eden
+
+3.) Display the information in both tables using one query.
+
+sqlite> SELECT * FROM makeup_collection
+   ...> JOIN favorite_books;
+NARS Exhibit A|L'Oreal Miss Manga Mascara|Burts Bees Lip Balm|Vicious|The Rose Society|True Grit
+NARS Exhibit A|L'Oreal Miss Manga Mascara|Burts Bees Lip Balm|Zoo City|Lord of The Rings|Where'd You Go, Bernadette?
+NARS Exhibit A|L'Oreal Miss Manga Mascara|Burts Bees Lip Balm|Beyond Black|The Harry Potter Series|The White Albumn
+NARS Exhibit A|L'Oreal Miss Manga Mascara|Burts Bees Lip Balm|High-Rise|The Wind-Up Bird Chronicle|Loitering With Intent
+Maybelline Face Studio Primer|L'Oreal Miss Manga Mascara|Lipstick Queen Medieval|Vicious|The Rose Society|True Grit
+Maybelline Face Studio Primer|L'Oreal Miss Manga Mascara|Lipstick Queen Medieval|Zoo City|Lord of The Rings|Where'd You Go, Bernadette?
+Maybelline Face Studio Primer|L'Oreal Miss Manga Mascara|Lipstick Queen Medieval|Beyond Black|The Harry Potter Series|The White Albumn
+Maybelline Face Studio Primer|L'Oreal Miss Manga Mascara|Lipstick Queen Medieval|High-Rise|The Wind-Up Bird Chronicle|Loitering With Intent
+Glossier Highlighter Quartz|L'Oreal Miss Manga Mascara|Nars Lip Pencil Belle De Jour|Vicious|The Rose Society|True Grit
+Glossier Highlighter Quartz|L'Oreal Miss Manga Mascara|Nars Lip Pencil Belle De Jour|Zoo City|Lord of The Rings|Where'd You Go, Bernadette?
+Glossier Highlighter Quartz|L'Oreal Miss Manga Mascara|Nars Lip Pencil Belle De Jour|Beyond Black|The Harry Potter Series|The White Albumn
+Glossier Highlighter Quartz|L'Oreal Miss Manga Mascara|Nars Lip Pencil Belle De Jour|High-Rise|The Wind-Up Bird Chronicle|Loitering With Intent
+L'Oreal Lumi Cushion Foundation|L'Oreal Miss Manga Mascara|Lipstick Queen Eden|Vicious|The Rose Society|True Grit
+L'Oreal Lumi Cushion Foundation|L'Oreal Miss Manga Mascara|Lipstick Queen Eden|Zoo City|Lord of The Rings|Where'd You Go, Bernadette?
+L'Oreal Lumi Cushion Foundation|L'Oreal Miss Manga Mascara|Lipstick Queen Eden|Beyond Black|The Harry Potter Series|The White Albumn
+L'Oreal Lumi Cushion Foundation|L'Oreal Miss Manga Mascara|Lipstick Queen Eden|High-Rise|The Wind-Up Bird Chronicle|Loitering With Intent
+
+4.) Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT face, science_fiction
+   ...> FROM makeup_collection, favorite_books;
+NARS Exhibit A|Vicious
+NARS Exhibit A|Zoo City
+NARS Exhibit A|Beyond Black
+NARS Exhibit A|High-Rise
+Maybelline Face Studio Primer|Vicious
+Maybelline Face Studio Primer|Zoo City
+Maybelline Face Studio Primer|Beyond Black
+Maybelline Face Studio Primer|High-Rise
+Glossier Highlighter Quartz|Vicious
+Glossier Highlighter Quartz|Zoo City
+Glossier Highlighter Quartz|Beyond Black
+Glossier Highlighter Quartz|High-Rise
+L'Oreal Lumi Cushion Foundation|Vicious
+L'Oreal Lumi Cushion Foundation|Zoo City
+L'Oreal Lumi Cushion Foundation|Beyond Black
+L'Oreal Lumi Cushion Foundation|High-Rise
+
+5.) Delete an item that meets some condition (you can choose a condition that makes sense). 
+sqlite> DELETE FROM makeup_collection
+   ...> WHERE face;
+sqlite> SELECT * FROM makeup_collection;
+NARS Exhibit A|L'Oreal Miss Manga Mascara|Burts Bees Lip Balm
+Maybelline Face Studio Primer|L'Oreal Miss Manga Mascara|Lipstick Queen Medieval
+Glossier Highlighter Quartz|L'Oreal Miss Manga Mascara|Nars Lip Pencil Belle De Jour
+L'Oreal Lumi Cushion Foundation|L'Oreal Miss Manga Mascara|Lipstick Queen Eden
+.
+
